@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+  <rule class="net.sourceforge.pmd.rules.XPathRule" message="JUnit should not be used" name="XPathRule_1367505200">
+    <priority>1</priority>
+    <properties>
+      <property name="xpath">
+        <value><![CDATA[//Name[starts-with(@Image, 'junit')]]]></value>
+      </property>
+    </properties>
+  </rule>
+  <rule class="net.sourceforge.pmd.rules.XPathRule" message="Remove println before committing code" name="XPathRule_1367505262">
+    <priority>1</priority>
+    <properties>
+      <property name="xpath">
+        <value><![CDATA[//Name[starts-with(@Image, 'System.out.print') or starts-with(@Image, 'System.err.print')]]]></value>
+      </property>
+    </properties>
+  </rule>
+</ruleset>
+
